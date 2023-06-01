@@ -396,11 +396,3 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
-
-# Folders
-/S1
-/S1HW
-/S2
-/S2HW
-/S3
-/S4
