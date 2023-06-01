@@ -398,9 +398,9 @@ FodyWeavers.xsd
 *.sln.iml
 
 # Folders
-S1
-S1HW
-S2
-S2HW
-S3
-S4
+/S1
+/S1HW
+/S2
+/S2HW
+/S3
+/S4
