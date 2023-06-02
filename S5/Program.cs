@@ -18,7 +18,7 @@ Console.WriteLine(result);
 // тип_возвр_значения ИмяМетода (параметры)
 // PascalCase
 // calculate - переменная, Calculate - имя метода
-int Calculate(int a, int b char sign)
+int Calculate(int a, int b, char sign)
 // a - число 1, b - число 2, char - 1 символ - '+'
 {
     int result = 0;
@@ -37,8 +37,8 @@ int Calculate(int a, int b char sign)
     return result;
 }
 // Вызов метода
-Console.WriteLine(Calculate(100, 25, '-')); // 100 - 25
-Console.WriteLine(Calculate(100, 400, '+')); // 100 + 400
+// Console.WriteLine(Calculate(100, 25, '-')); // 100 - 25
+// Console.WriteLine(Calculate(100, 400, '+')); // 100 + 400
 Console.WriteLine(Calculate(100, 400, '*')); // 100 * 400 -> 0
 */
 
@@ -138,7 +138,6 @@ int[] array = GetArray(12, -9, 9);
 // Интерполяция ($)
 Console.WriteLine($"Массив: [ {String.Join("; ", array)} ]");
 Console.WriteLine($"Перевернутый массив: [ {String.Join("; ", ReverseArray(array))} ]");
-*/
 
 // Задайте массив. Напишите программу, которая определяет, присутствует ли заданное число в массиве.
 // 4; массив [6, 7, 19, 345, 3] -> нет
@@ -169,4 +168,4 @@ else // FindElement(array,numberForSearch) == false
     // $"Текст {переменная} текчст {переменная}"
     Console.WriteLine($"Число {numberForSearch} в массиве ОТСУТСТВУЕТ");
 }
-
+*/
