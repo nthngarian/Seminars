@@ -15,8 +15,7 @@ if (numbers[i] % 2 == 0)
 count++;
 
 Console.WriteLine();
-Console.WriteLine($"Кол-во чисел в массиве = {numbers.Length}");
-Console.WriteLine($"Кол-во чётных чисел в массиве = {count}");
+Console.WriteLine($"Кол-во чётных чисел массива = {count}");
 
 void FillArrayRandomNumbers(int[] numbers)
 {
@@ -54,8 +53,7 @@ for (int i = 1; i < numbers.Length; i += 2)
     sum += numbers[i];
 
     Console.WriteLine();
-    Console.WriteLine($"Кол-во чисел в массиве = {numbers.Length}");
-    Console.WriteLine($"Сумма элементов на нечётных позициях = {sum}");
+    Console.WriteLine($"Сумма элементов на нечётных позициях массива = {sum}");
 
 void FillArrayRandomNumbers(int[] numbers)
 {
@@ -102,10 +100,9 @@ for (int j = 0; j < numbers.Length; j++)
 }
 
 Console.WriteLine();
-Console.WriteLine($"Кол-во чисел в массиве = {numbers.Length}");
-Console.WriteLine($"Максимальное значение = {max}");
-Console.WriteLine($"Минимальное значение = {min}");
-Console.WriteLine($"Разница между максимальным и минимальным значением = {max - min}");
+Console.WriteLine($"Значение максимального элемента массива = {max}");
+Console.WriteLine($"Значение минимального элемента массива = {min}");
+Console.WriteLine($"Разница между максимальным и минимальным значением элементов массива = {max - min}");
 
 void FillArrayRandomNumbers(double[] numbers)
 {
