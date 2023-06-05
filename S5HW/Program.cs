@@ -41,7 +41,7 @@ void PrintArray(int[] numbers)
 // Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
 // [3, 7, 23, 12] -> 19
 // [-4, -6, 89, 6] -> 0
-
+/*
 Console.Write("Введите размер массива: ");
 int size = Convert.ToInt32(Console.ReadLine());
 int[] numbers = new int[size];
@@ -50,12 +50,10 @@ Console.Write("Массив: ");
 PrintArray(numbers);
 int sum = 0;
 
-for (int i = 0; i < numbers.Length; i+=2)
-
+for (int i = 1; i < numbers.Length; i += 2)
     sum += numbers[i];
 
-
-Console.WriteLine();
+    Console.WriteLine();
     Console.WriteLine($"Кол-во чисел в массиве = {numbers.Length}");
     Console.WriteLine($"Сумма элементов на нечётных позициях = {sum}");
 
@@ -77,7 +75,7 @@ void PrintArray(int[] numbers)
     Console.Write("]");
     Console.WriteLine();
 }
-
+*/
 
 // Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 // [3.22, 4.2, 1.15, 77.15, 65.2] => 77.15 - 1.15 = 76
