@@ -21,7 +21,7 @@ void FillArrayRandomNumbers(int[] numbers)
 {
     for (int j = 0; j < numbers.Length; j++)
     {
-        numbers[j] = new Random().Next(100,1000);
+        numbers[j] = new Random().Next(100, 1000);
     }
 }
 
@@ -59,7 +59,7 @@ void FillArrayRandomNumbers(int[] numbers)
 {
     for (int j = 0; j < numbers.Length; j++)
         {
-            numbers[j] = new Random().Next(1,10);
+            numbers[j] = new Random().Next(-100, 100);
         }
 }
 
@@ -108,7 +108,7 @@ void FillArrayRandomNumbers(double[] numbers)
 {
     for (int j = 0; j < numbers.Length; j++)
         {
-            numbers[j] = Convert.ToDouble(new Random().Next(100,1000)) / 100;
+            numbers[j] = Convert.ToDouble(new Random().Next(100, 1000)) / 100;
         }
 }
 
