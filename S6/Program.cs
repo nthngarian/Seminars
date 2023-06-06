@@ -147,4 +147,4 @@ void WriteNumbers(int[] numbers)
 
 var numbers = GetFibonacciNumbers(0);
 WriteNumbers(numbers);
-/*
+*/
