@@ -4,17 +4,17 @@
 // 1 -3,3 8 -9,9
 // 8 7,8 -7,1 9
 /*
-Console.Write("Введите количество строк: ");
+Console.WriteLine("Введите количество строк: ");
 int rows = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Введите количество cтолбцов: ");
+Console.WriteLine("Введите количество cтолбцов: ");
 int columns = Convert.ToInt32(Console.ReadLine());
 
 double[,] numbers = new double[rows, columns];
-FillMatrixRandomNumbers(numbers);
-PrintMatrix(numbers);
+FillArrayRandomNumbers(numbers);
+PrintArray(numbers);
 
-void FillMatrixRandomNumbers(double[,] array)
+void FillArrayRandomNumbers(double[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
     {
@@ -25,9 +25,9 @@ void FillMatrixRandomNumbers(double[,] array)
     }
 }
 
-void PrintMatrix(double[,] array)
+void PrintArray(double[,] array)
 {
-    Console.WriteLine("Матрица: ");
+    Console.WriteLine("Массив: ");
     for (int i = 0; i < array.GetLength(0); i++)
     {
         for (int j = 0; j < array.GetLength(1); j++)
@@ -47,14 +47,14 @@ void PrintMatrix(double[,] array)
 // 8 4 2 4
 // 17 -> такого числа в массиве нет
 /*
-Console.Write("Введите номер строки: ");
+Console.WriteLine("Введите номер строки: ");
 int n = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Введите номер столбца: ");
+Console.WriteLine("Введите номер столбца: ");
 int m = Convert.ToInt32(Console.ReadLine());
 
 int [,] numbers = new int [5, 5];
-FillMatrixRandomNumbers(numbers);
+FillArrayRandomNumbers(numbers);
 
 if (n > numbers.GetLength(0) || m > numbers.GetLength(1))
 {
@@ -62,12 +62,13 @@ if (n > numbers.GetLength(0) || m > numbers.GetLength(1))
 }
 else
 {
-    Console.WriteLine($"Значение элемента {n} строки {m} столбца равно: {numbers[n-1, m-1]}");
+    Console.WriteLine($"Значение элемента {n} строки {m} столбца равно:");
+    Console.WriteLine(numbers[n-1, m-1]);
 }
 
-PrintMatrix(numbers);
+PrintArray(numbers);
 
-void FillMatrixRandomNumbers(int[,] array)
+void FillArrayRandomNumbers(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
         {        
@@ -78,9 +79,9 @@ void FillMatrixRandomNumbers(int[,] array)
         }
 }
 
-void PrintMatrix(int[,] array)
+void PrintArray(int[,] array)
 {
-    Console.WriteLine("Матрица: ");
+    Console.WriteLine("Массив: ");
     for (int i = 0; i < array.GetLength(0); i++)
     {
         for (int j = 0; j < array.GetLength(1); j++)
@@ -99,17 +100,17 @@ void PrintMatrix(int[,] array)
 // 8 4 2 4
 // Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 /*
-Console.Write("Введите количество строк: ");
+Console.WriteLine("Введите количество строк:");
 int n = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Введите количество столбцов: ");
+Console.WriteLine("Введите количество столбцов:");
 int m = Convert.ToInt32(Console.ReadLine());
 
 int[,] numbers = new int[n, m];
-FillMatrixRandomNumbers(numbers);
-PrintMatrix(numbers);
+FillArrayRandomNumbers(numbers);
+PrintArray(numbers);
 
-void FillMatrixRandomNumbers(int[,] array)
+void FillArrayRandomNumbers(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
     {
@@ -120,9 +121,9 @@ void FillMatrixRandomNumbers(int[,] array)
     }
 }
 
-void PrintMatrix(int[,] array)
+void PrintArray(int[,] array)
 {
-    Console.WriteLine("Матрица: ");
+    Console.WriteLine("Массив:");
     for (int i = 0; i < array.GetLength(0); i++)
     {
         for (int j = 0; j < array.GetLength(1); j++)
@@ -134,16 +135,16 @@ void PrintMatrix(int[,] array)
 }
 
 Console.WriteLine("Среднее арифметическое каждого столбца:");
-
 for (int j = 0; j < numbers.GetLength(1); j++)
 {
+    
     double avarage = 0;
     for (int i = 0; i < numbers.GetLength(0); i++)
     {
         avarage = (avarage + numbers[i, j]);
     }
     avarage = avarage / n;
-    Console.Write(avarage + "; ");
+    Console.WriteLine(avarage);
 }
 */
 
