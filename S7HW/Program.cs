@@ -27,6 +27,7 @@ void FillMatrixRandomNumbers(double[,] array)
 
 void PrintMatrix(double[,] array)
 {
+    Console.WriteLine("Матрица: ");
     for (int i = 0; i < array.GetLength(0); i++)
     {
         for (int j = 0; j < array.GetLength(1); j++)
@@ -79,6 +80,7 @@ void FillMatrixRandomNumbers(int[,] array)
 
 void PrintMatrix(int[,] array)
 {
+    Console.WriteLine("Матрица: ");
     for (int i = 0; i < array.GetLength(0); i++)
     {
         for (int j = 0; j < array.GetLength(1); j++)
@@ -96,7 +98,7 @@ void PrintMatrix(int[,] array)
 // 5 9 2 3
 // 8 4 2 4
 // Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
-
+/*
 Console.Write("Введите количество строк: ");
 int n = Convert.ToInt32(Console.ReadLine());
 
@@ -120,6 +122,7 @@ void FillMatrixRandomNumbers(int[,] array)
 
 void PrintMatrix(int[,] array)
 {
+    Console.WriteLine("Матрица: ");
     for (int i = 0; i < array.GetLength(0); i++)
     {
         for (int j = 0; j < array.GetLength(1); j++)
@@ -130,6 +133,8 @@ void PrintMatrix(int[,] array)
     }
 }
 
+Console.WriteLine("Среднее арифметическое каждого столбца:");
+
 for (int j = 0; j < numbers.GetLength(1); j++)
 {
     double avarage = 0;
@@ -138,8 +143,9 @@ for (int j = 0; j < numbers.GetLength(1); j++)
         avarage = (avarage + numbers[i, j]);
     }
     avarage = avarage / n;
-    Console.WriteLine(avarage + "; ");
+    Console.Write(avarage + "; ");
 }
+*/
 
 // Дополнительное:
 // Задайте двумерный массив. Найдите сумму элементов, находящихся на главной диагонали (с индексами (0,0); (1;1) и т.д.
