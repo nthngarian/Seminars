@@ -164,7 +164,7 @@ void PrintArray(int[,] array)
     }
 }
 
-int size = InputInt("Введите размерность массивов:");
+int size = InputInt("Введите размер массивов:");
 int[,] firstArray = new int[size, size];
 int[,] secondArray = new int[size, size];
 FillArrayRandomNumbers(firstArray);
@@ -298,7 +298,7 @@ PrintArray(numbers);
 
 void PrintArray(int[,] array)
 {
-    Console.WriteLine("Массив:");
+    Console.WriteLine("Спирально заполненный массив:");
     for (int i = 0; i < array.GetLength(0); i++)
     {
         for (int j = 0; j < array.GetLength(1); j++)
