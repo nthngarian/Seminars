@@ -134,24 +134,19 @@ void PrintArray(int[,] array)
     }
 }
 
-Console.WriteLine("Среднее арифметическое каждого столбца:");
-for (int j = 0; j < numbers.GetLength(1); j++)
+void AvarageOfColumn(int[,] array)
 {
-    
-    double avarage = 0;
-    for (int i = 0; i < numbers.GetLength(0); i++)
+    for (int i = 0; i < array.GetLength(1); i++) 
     {
-        avarage = (avarage + numbers[i, j]);
+        double sum = 0; // Среднее арифм.
+        for (int j = 0; j < array.GetLength(0); j++)
+        {
+            
+            sum = sum + array[j, i];
+        }
+        Console.WriteLine($"Среднее арифметическое {i + 1} столбца:"); 
+        Console.WriteLine(Math.Round(sum / array.GetLength(0), 1));
     }
-    avarage = avarage / n;
-    Console.WriteLine(avarage);
 }
+AvarageOfColumn(numbers);
 */
-
-// Дополнительное:
-// Задайте двумерный массив. Найдите сумму элементов, находящихся на главной диагонали (с индексами (0,0); (1;1) и т.д.
-// Например, задан массив:
-// 1 4 7 2
-// 5 9 2 3
-// 8 4 2 4
-// Сумма элементов главной диагонали: 1+9+2 = 12
