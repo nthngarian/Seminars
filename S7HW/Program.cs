@@ -11,6 +11,7 @@ Console.WriteLine("Введите количество cтолбцов: ");
 int columns = Convert.ToInt32(Console.ReadLine());
 
 double[,] numbers = new double[rows, columns];
+
 FillArrayRandomNumbers(numbers);
 PrintArray(numbers);
 
@@ -54,6 +55,7 @@ Console.WriteLine("Введите номер столбца: ");
 int m = Convert.ToInt32(Console.ReadLine());
 
 int [,] numbers = new int [5, 5];
+
 FillArrayRandomNumbers(numbers);
 
 if (n > numbers.GetLength(0) || m > numbers.GetLength(1))
@@ -108,6 +110,7 @@ Console.WriteLine("Введите количество столбцов:");
 int m = Convert.ToInt32(Console.ReadLine());
 
 int[,] numbers = new int[n, m];
+
 FillArrayRandomNumbers(numbers);
 PrintArray(numbers);
 
