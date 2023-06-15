@@ -58,11 +58,12 @@ FillArrayRandomNumbers(numbers);
 
 if (n > numbers.GetLength(0) || m > numbers.GetLength(1))
 {
-    Console.WriteLine("Такого элемента НЕТ.");
+    Console.WriteLine($"Значение элемента {n} строки {m} столбца:");
+    Console.WriteLine("Такого элемента в массиве НЕТ.");
 }
 else
 {
-    Console.WriteLine($"Значение элемента {n} строки {m} столбца равно:");
+    Console.WriteLine($"Значение элемента {n} строки {m} столбца:");
     Console.WriteLine(numbers[n-1, m-1]);
 }
 
